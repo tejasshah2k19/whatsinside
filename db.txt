@@ -1,0 +1,43 @@
+
+
+create database whatsinside;
+
+
+
+users: table 
+
+create table users(
+	userId int primary key auto_increment,
+	firstName varchar(20), 
+	lastName varchar(20),
+	gender varchar(6),
+	email varchar(30),
+	password varchar(64) 
+);
+
+
+create table ingredients(
+	 ingredientId int primary key auto_increment,
+	 name varchar(40),
+	 scientificName varchar(100),
+	 commonUsage varchar(255),
+	 avoidBy varchar(255),
+	 fda varchar(100),
+	 fssai varchar(100),  
+	 efsa varchar(100) 
+	);
+	
+alter table users add column otp int; 
+alter table users add column otpTime datetime; 
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

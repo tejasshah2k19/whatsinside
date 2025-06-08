@@ -1,0 +1,49 @@
+how to send email
+
+ 
+1) java mail {lib} 
+2) gmail : email , password { gmail app specific password generate }  
+
+-----------------------------------------------------------------------------
+how to configure database: 
+
+mysql jar -> 	connector 
+spring data jar ->  spring data jdbc 
+
+project -> right click -> spring -> add/edit starter -> 
+			type mysql -> 
+			type jdbc  -> 
+			
+			next -> pom.xml -> finish 
+			
+			
+application.properties -> configuration -> 
+-------------------------------------------------------------------------------
+
+how to execute insert query :- 
+
+query code -> dao 
+		1) create UserDao -> dao folder  -> @Repository 
+		2) JdbcTemplate -> singleton -> @Autowired 
+		
+---------------------------------------------------------------------------------		
+		
+		
+		method -> insert user 
+		method -> select user 
+			   -> view , delete , update 
+			   		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
