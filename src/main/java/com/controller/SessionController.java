@@ -12,6 +12,8 @@ import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -28,6 +30,8 @@ import jakarta.mail.internet.MimeMessage;
 @Controller
 public class SessionController {
 
+	@Autowired
+	PasswordEncoder passwordEncoder;
 	// spring -> @Autowired
 	// singleton
 	@Autowired
@@ -57,6 +61,11 @@ public class SessionController {
 			model.addAttribute("result", result);
 			return "Signup";
 		} else {
+
+			// rawPassword -> maxLength-70
+
+			String ePwd = passwordEncoder.encode(user.getPassword());
+			user.setPassword(ePwd);// 60
 
 			// db insert
 			userDao.addUser(user);
@@ -97,15 +106,19 @@ public class SessionController {
 
 	@PostMapping("/login")
 	public String authenticate(String email, String password, Model model) {
-		UserBean userBean = userDao.authenticate(email, password);
+		UserBean userBean = userDao.getUserByEmail(email);
 
 		if (userBean == null) {
 			model.addAttribute("error", "Invalid Credentials");
 			return "Login";
-		} else {
-
-			return "redirect:/listingredients";
 		}
+
+		if (passwordEncoder.matches(password, userBean.getPassword()) == false) {
+			model.addAttribute("error", "Invalid Credentials");
+			return "Login";
+		}
+
+		return "redirect:/listingredients";
 	}
 
 	@GetMapping("/forgotpassword")

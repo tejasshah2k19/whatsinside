@@ -33,8 +33,17 @@ query code -> dao
 		method -> select user 
 			   -> view , delete , update 
 			   		
-		
-		
+---------------------------------------
+
+royal -> nh6u5i49oeirfjghy7y8654ij56bytrjei398uygc
+
+encrypt -> Bcrypt   
+	
+pom.xml 
+
+1) spring security crypto  
+	
+2) BCryptPasswordEncoder		
 		
 		
 		
