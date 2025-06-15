@@ -30,7 +30,10 @@ create table ingredients(
 alter table users add column otp int; 
 alter table users add column otpTime datetime; 
 
-	
+alter table users add column role varchar(10); 
+
+
+update users set role = 'user';
 	
 	
 	

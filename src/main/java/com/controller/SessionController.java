@@ -117,7 +117,14 @@ public class SessionController {
 			model.addAttribute("error", "Invalid Credentials");
 			return "Login";
 		}
-
+		
+		if(userBean.getRole().equals("user")) {
+			return "redirect:/home";
+		}else if(userBean.getRole().equals("admin")) {
+			return "redirect:/admindashboard";
+		}
+		
+		
 		return "redirect:/listingredients";
 	}
 

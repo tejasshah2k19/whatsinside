@@ -22,6 +22,8 @@ public class UserBean {
 	private Integer otp; 
 	private LocalDateTime otpTime;
 	
+	private String role; 
+	
 	public Integer getUserId() {
 		return userId;
 	}
@@ -70,6 +72,12 @@ public class UserBean {
 	}
 	public void setOtpTime(LocalDateTime otpTime) {
 		this.otpTime = otpTime;
+	}
+	public String getRole() {
+		return role;
+	}
+	public void setRole(String role) {
+		this.role = role;
 	}
 	
 	
