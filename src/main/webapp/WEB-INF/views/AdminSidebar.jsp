@@ -1,39 +1,43 @@
 <!--**********************************
             Sidebar start
         ***********************************-->
-		<div class="quixnav">
-			<div class="quixnav-scroll">
-				<ul class="metismenu" id="menu">
-					<li class="nav-label first">Main Menu</li>
-					<!-- <li><a href="index.html"><i class="icon icon-single-04"></i><span class="nav-text">Dashboard</span></a>
+<div class="quixnav">
+	<div class="quixnav-scroll">
+		<ul class="metismenu" id="menu">
+			<li class="nav-label first">Main Menu</li>
+			<!-- <li><a href="index.html"><i class="icon icon-single-04"></i><span class="nav-text">Dashboard</span></a>
                     </li> -->
-					<li><a class="" href="admindashboard"
-						aria-expanded="false"><i class="icon icon-single-04"></i><span
-							class="nav-text">Dashboard</span></a>
-						 </li>
+			<li><a class="" href="admindashboard" aria-expanded="false"><i
+					class="icon icon-single-04"></i><span class="nav-text">Dashboard</span></a>
+			</li>
 
-					<li class="nav-label">Content </li>
-					<li><a class="has-arrow" href="javascript:void()"
-						aria-expanded="false"><i class="icon icon-app-store"></i><span
-							class="nav-text">Ingredients</span></a>
-						<ul aria-expanded="false">
-							<li><a href="newingredient">New</a></li>
-							<li><a href="listingredients">List</a></li>
-						</ul></li>
-					<li><a class="has-arrow" href="javascript:void()"
-						aria-expanded="false"><i class="icon icon-chart-bar-33"></i><span
-							class="nav-text">Charts</span></a>
-						<ul aria-expanded="false">
-							<li><a href="./chart-flot.html">Flot</a></li>
-							<li><a href="./chart-morris.html">Morris</a></li>
-							<li><a href="./chart-chartjs.html">Chartjs</a></li>
-							<li><a href="./chart-chartist.html">Chartist</a></li>
-							<li><a href="./chart-sparkline.html">Sparkline</a></li>
-							<li><a href="./chart-peity.html">Peity</a></li>
-						</ul></li>
-					
-					
-					<!-- <li class="nav-label">Components</li>
+			<li class="nav-label">Content</li>
+			<li><a class="has-arrow" href="javascript:void()"
+				aria-expanded="false"><i class="icon icon-app-store"></i><span
+					class="nav-text">Ingredients</span></a>
+				<ul aria-expanded="false">
+					<li><a href="newingredient">New</a></li>
+					<li><a href="listingredients">List</a></li>
+
+				</ul></li>
+			<li><a class="has-arrow" href="javascript:void()"
+				aria-expanded="false"><i class="icon icon-chart-bar-33"></i><span
+					class="nav-text">Charts</span></a>
+				<ul aria-expanded="false">
+					<li><a href="./chart-flot.html">Flot</a></li>
+					<li><a href="./chart-morris.html">Morris</a></li>
+					<li><a href="./chart-chartjs.html">Chartjs</a></li>
+					<li><a href="./chart-chartist.html">Chartist</a></li>
+					<li><a href="./chart-sparkline.html">Sparkline</a></li>
+					<li><a href="./chart-peity.html">Peity</a></li>
+				</ul></li>
+
+
+			<li><a   href="searchlog" aria-expanded="false"><i
+					class="mdi mdi-magnify"></i><span class="nav-text">Search
+						Log</span></a></li>
+
+			<!-- <li class="nav-label">Components</li>
 					<li><a class="has-arrow" href="javascript:void()"
 						aria-expanded="false"><i class="icon icon-world-2"></i><span
 							class="nav-text">Bootstrap</span></a>
@@ -58,7 +62,7 @@
 
 						</ul></li>
  -->
-					<!-- <li><a class="has-arrow" href="javascript:void()"
+			<!-- <li><a class="has-arrow" href="javascript:void()"
 						aria-expanded="false"><i class="icon icon-plug"></i><span
 							class="nav-text">Plugins</span></a>
 						<ul aria-expanded="false">
@@ -69,14 +73,14 @@
 							<li><a href="./uc-toastr.html">Toastr</a></li>
 							<li><a href="./map-jqvmap.html">Jqv Map</a></li>
 						</ul></li> -->
-					 
-					 
-					 
-					 
-					 
-				</ul>
-			</div>
-		</div>
-		<!--**********************************
+
+
+
+
+
+		</ul>
+	</div>
+</div>
+<!--**********************************
             Sidebar end
         ***********************************-->
