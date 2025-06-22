@@ -26,6 +26,7 @@ import com.dao.UserDao;
 
 import jakarta.mail.MessagingException;
 import jakarta.mail.internet.MimeMessage;
+import jakarta.servlet.http.HttpSession;
 
 @Controller
 public class SessionController {
@@ -105,7 +106,7 @@ public class SessionController {
 	}
 
 	@PostMapping("/login")
-	public String authenticate(String email, String password, Model model) {
+	public String authenticate(String email, String password, Model model,HttpSession session) {
 		UserBean userBean = userDao.getUserByEmail(email);
 
 		if (userBean == null) {
@@ -117,6 +118,10 @@ public class SessionController {
 			model.addAttribute("error", "Invalid Credentials");
 			return "Login";
 		}
+		
+		
+		//cookie - session 
+		session.setAttribute("user", userBean);
 		
 		if(userBean.getRole().equals("user")) {
 			return "redirect:/home";

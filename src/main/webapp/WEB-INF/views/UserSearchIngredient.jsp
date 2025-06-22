@@ -7,7 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-Welcome....
-<a href="search">Search</a>
+<form action="usersearchingredient" method="post">
+
+	Name : <input type="Text" name="name"/><bR><br>
+	<input type="submit" value="Search"/>
+</form>
+<Br>
+${error}
 </body>
 </html>

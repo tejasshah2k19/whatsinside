@@ -5,27 +5,13 @@
 <meta charset="UTF-8" />
 <title>Add New Ingredient</title>
 <!-- Bootstrap 4.5 CSS CDN -->
-
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
 </head>
 <body>
-
-
-	<jsp:include page="AdminHeader.jsp"></jsp:include>
-	<jsp:include page="AdminSidebar.jsp"></jsp:include>
-
-
-<div class="content-body">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="card">
-						<div class="card-header">
-							<h4 class="card-title">New Ingredients</h4>
-						</div>
-						<div class="card-body">
-<div class="container mt-5">
-<!-- 		<h2 class="mb-4">Add New Ingredient</h2>
- -->		<form action="saveingredient" method="post">
+	<div class="container mt-5">
+		<h2 class="mb-4">Add New Ingredient</h2>
+		<form action="saveingredient" method="post">
 			<div class="form-group">
 				<label for="name">Name (e.g., INS211)</label> <input type="text"
 					class="form-control" id="name" name="name"
@@ -124,22 +110,12 @@
 			<button type="submit" class="btn btn-primary">Add Ingredient</button>
 		</form>
 	</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-
-	
-	<jsp:include page="AdminFooter.jsp"></jsp:include>
 
 	<!-- Bootstrap 4.5 JS and dependencies -->
-<!-- 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 	<script
 		src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 	<script
 		src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
- --></body>
+</body>
 </html>
