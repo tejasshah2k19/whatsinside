@@ -37,6 +37,7 @@
 											<th>#</th>
 											<th>Search Name (INS Code)</th>
 											<th>User Name</th>
+											<th>Action</th>
 										</tr>
 									</thead>
 									<tbody>
@@ -51,6 +52,7 @@
 											<td><%=ib.getSearchId()%></td>
 											<td><%=ib.getName()%></td>
 											<td><%=ib.getFirstName()%></td>
+											<td><a href="fetchdata?name=<%=ib.getName()%>">Fetch</a></td>
 										</tr>
 										<%
 										}
